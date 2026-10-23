@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Applicants Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <h2>Black Fiber</h2>
+        </div>
+
+        <ul>
+            <li>Dashboard</li>
+            <li class="active">Applicants</li>
+            <li>Employees</li>
+            <li>Reports</li>
+            <li>Settings</li>
+        </ul>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="page-title">
+            <h1>Applicants</h1>
+            <p>
+                Manage job applicants and recruitment activities.
+            </p>
+        </div>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Total Applicants</h3>
+                <p>56</p>
+            </div>
+
+            <div class="card">
+                <h3>New Applications</h3>
+                <p>12</p>
+            </div>
+
+            <div class="card">
+                <h3>Interview Scheduled</h3>
+                <p>8</p>
+            </div>
+
+        </div>
+
+        <div class="toolbar">
+
+            <input
+                type="text"
+                placeholder="Search applicant..."
+            >
+
+            <button>
+                Add Applicant
+            </button>
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th class="col-id">ID</th>
+                    <th class="col-name">Applicant Name</th>
+                    <th class="col-position">Position</th>
+                    <th class="col-status">Status</th>
+                    <th class="col-actions">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="applicantTable">
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="applicants.js"></script>
+
+</body>
+</html>
